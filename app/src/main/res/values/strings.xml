@@ -4,6 +4,9 @@
     <string name="FirstLevelText">Samotný král tě pozval na hrad. Účel toho pozvání netušíš, ale dostat se na hrad je tvůj celoživotní sen. Cesta je však dlouhá a vyčerpávající. Dojdi tedy na hrad a až tam budeš povrď svou polohu.</string>
     <string name="ThirdLevelText">Po zjištění, že princeznu unesl drak jsi věděl, že sám draka nezneškodníš. Vyhledej tedy kouzelníka a vyžádej si od něj tajný kód \"QR\", který ti odhalí tajné zaklínadlo, kterým draka zneškodníš</string>
     <string name="btnFirstLevel">Ověřit lokaci</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="MainActivityTitle">Hra pro děti</string>
+    <string name="FirstLevelActivityTitle">První úroveň</string>
+    <string name="SecondLevelActivityTitle">Druhá Úroveň</string>
+    <string name="ThirdLevelActivityTitle">Třetí úroveň</string>
+    <string name="FourthLevelActivityTitle">Čtvrtá úroveň</string>
 </resources>
