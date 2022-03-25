@@ -10,6 +10,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UMTE_Projekt1">
         <activity
+            android:name=".FourthLevelActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".ThirdLevelActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".SecondLevelActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".FirstLevelActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

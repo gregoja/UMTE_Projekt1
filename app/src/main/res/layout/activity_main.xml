@@ -25,6 +25,7 @@
         android:layout_alignParentTop="true"
         android:layout_toStartOf="@+id/centerHorizontalShim"
         android:gravity="center"
+        android:onClick="launchFirstLevel"
         android:src="@drawable/castle"
         tools:srcCompat="@tools:sample/avatars" />
 
@@ -37,7 +38,8 @@
         android:layout_toEndOf="@+id/centerHorizontalShim"
         android:gravity="center"
         android:src="@drawable/king"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:onClick="launchSecondLevel"/>
 
     <ImageView
         android:layout_width="match_parent"
@@ -48,7 +50,8 @@
         android:layout_toStartOf="@+id/centerHorizontalShim"
         android:gravity="center"
         android:src="@drawable/dragon"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:onClick="launchThirdLevel"/>
 
     <ImageView
         android:layout_width="match_parent"
@@ -58,6 +61,7 @@
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/centerHorizontalShim"
         android:src="@drawable/princess"
-        tools:srcCompat="@tools:sample/avatars"/>
+        tools:srcCompat="@tools:sample/avatars"
+        android:onClick="launchFourthLevel"/>
 
 </RelativeLayout>
