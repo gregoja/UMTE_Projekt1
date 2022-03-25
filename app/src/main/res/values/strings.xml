@@ -1,4 +1,9 @@
 <resources>
     <string name="app_name">UMTE_Projekt1</string>
     <string name="SecondLevelText">Princezna se ztratila. Vůbec nevím, kde ji hledat. Jediná stopa, kterou mám je tato hádanka: \"Na provázku přivázaný, letí s větrem o závod, mezi mraky propletený přiletím i napřesrok! Kdo jsem?\" Pomož mi ji najít! A jako odměnu dostaneš polovinu princezny a celé království k tomu!</string>
+    <string name="FirstLevelText">Samotný král tě pozval na hrad. Účel toho pozvání netušíš, ale dostat se na hrad je tvůj celoživotní sen. Cesta je však dlouhá a vyčerpávající. Dojdi tedy na hrad a až tam budeš povrď svou polohu.</string>
+    <string name="ThirdLevelText">Po zjištění, že princeznu unesl drak jsi věděl, že sám draka nezneškodníš. Vyhledej tedy kouzelníka a vyžádej si od něj tajný kód \"QR\", který ti odhalí tajné zaklínadlo, kterým draka zneškodníš</string>
+    <string name="btnFirstLevel">Ověřit lokaci</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

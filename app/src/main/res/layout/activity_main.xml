@@ -20,6 +20,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:layout_above="@+id/centerVerticalShim"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
@@ -32,6 +34,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:layout_above="@+id/centerVerticalShim"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
@@ -44,23 +48,27 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:layout_below="@+id/centerVerticalShim"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
         android:layout_toStartOf="@+id/centerHorizontalShim"
         android:gravity="center"
-        android:src="@drawable/dragon"
+        android:src="@drawable/wizard"
         tools:srcCompat="@tools:sample/avatars"
         android:onClick="launchThirdLevel"/>
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
         android:layout_below="@+id/centerVerticalShim"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_toEndOf="@+id/centerHorizontalShim"
-        android:src="@drawable/princess"
+        android:src="@drawable/dragon"
         tools:srcCompat="@tools:sample/avatars"
         android:onClick="launchFourthLevel"/>
 
