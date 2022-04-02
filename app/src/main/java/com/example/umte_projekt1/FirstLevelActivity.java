@@ -77,6 +77,8 @@ public class FirstLevelActivity extends AppCompatActivity {
                 }else{
                     Toast.makeText(getApplicationContext(),"Nene, Nejsi dostatečně blízko" + dist,Toast.LENGTH_SHORT).show();
                 }
+            }else{
+                Toast.makeText(getApplicationContext(),"Nastala chyba!",Toast.LENGTH_SHORT).show();
             }
         });
     }
