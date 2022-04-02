@@ -4,45 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ThirdLevelActivity">
+    tools:context=".GameCompletedActivity">
 
     <ImageView
-        android:id="@+id/imgLevel3"
+        android:id="@+id/imgGameCompleted"
         android:layout_width="300dp"
         android:layout_height="300dp"
-        android:src="@drawable/level3"
+        android:contentDescription="@string/levelDescription1"
+        android:src="@drawable/gamecomplted"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.050000012"
-        tools:srcCompat="@tools:sample/avatars"
-        android:contentDescription="@string/levelDescription3"/>
+        app:layout_constraintTop_toBottomOf="@+id/txtHeadlineGameCompleted"
+        app:layout_constraintVertical_bias="0.110000014"
+        tools:srcCompat="@tools:sample/avatars" />
 
     <TextView
-        android:id="@+id/textLevel4"
+        android:id="@+id/textGameCompleted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:justificationMode="inter_word"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
-        android:text="@string/ThirdLevelText"
+        android:text="@string/textGameCompleted"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/btnGameCompleted"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLevel3" />
+        app:layout_constraintTop_toBottomOf="@+id/imgGameCompleted" />
 
     <Button
         android:id="@+id/btnGameCompleted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:onClick="resetGame"
+        android:text="@string/btnGameCompleted"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLevel3"
-        android:onClick="launchQrActivity"/>
+        app:layout_constraintTop_toBottomOf="@+id/imgGameCompleted"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <TextView
+        android:id="@+id/txtHeadlineGameCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtHeadlineGameCompleted"
+        android:textSize="50sp"
+        android:textColor="#FFEB3B"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.01999998" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

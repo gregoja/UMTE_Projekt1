@@ -69,6 +69,10 @@ public class MainActivity extends AppCompatActivity {
                     imgPreviewLevel4.setOnClickListener(this::launchLevel4);
                     break;
                 }
+                case 4: {
+                    Intent intent = new Intent(this,GameCompletedActivity.class);
+                    activityResultLauncher.launch(intent);
+                }
             }
         }
     }

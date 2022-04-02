@@ -4,10 +4,11 @@
 
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="false"/>
+        android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -16,33 +17,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UMTE_Projekt1">
         <activity
+            android:name=".GameCompletedActivity"
+            android:exported="false"/>
+        <activity
             android:name=".QrReaderActivity"
             android:exported="false"
-            android:parentActivityName=".ThirdLevelActivity"/>
+            android:parentActivityName=".ThirdLevelActivity" />
         <activity
             android:name=".FourthLevelActivity"
-            android:label="@string/FourthLevelActivityTitle"
             android:exported="false"
+            android:label="@string/FourthLevelActivityTitle"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ThirdLevelActivity"
-            android:label="@string/ThirdLevelActivityTitle"
             android:exported="false"
+            android:label="@string/ThirdLevelActivityTitle"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SecondLevelActivity"
-            android:label="@string/SecondLevelActivityTitle"
             android:exported="false"
+            android:label="@string/SecondLevelActivityTitle"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".FirstLevelActivity"
-            android:label="@string/FirstLevelActivityTitle"
             android:exported="false"
+            android:label="@string/FirstLevelActivityTitle"
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".MainActivity"
-            android:label="@string/MainActivityTitle"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/MainActivityTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -18,4 +18,8 @@
     <string name="levelDescription2">Second Level image (king)</string>
     <string name="levelDescription3">Third Level image (wizard)</string>
     <string name="levelDescription4">Fourth Level image (dragon)</string>
+    <string name="btnTextLevel2">Odeslat odpověď</string>
+    <string name="btnGameCompleted">Resetovat hru</string>
+    <string name="textGameCompleted">Po porážce draka jsi se už moc těšil na svou zaslouženou odměnu. Chystal ses ale králi navrhnout, že namísto původní odměny by jsi raději jenom polovinu království ale celou princeznu. Nakonec se ukázalo, že takhle to naštěstí král vždy myslel. Pouze se přeřekl. KONEC.</string>
+    <string name="txtHeadlineGameCompleted">GRATULACE!!</string>
 </resources>

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
@@ -29,6 +30,12 @@ public class FourthLevelActivity extends AppCompatActivity{
             public void onSensorChanged(SensorEvent event) {
                 double magneticFieldStrength = Math.sqrt((event.values[0]*event.values[0])+(event.values[1]*event.values[1])+(event.values[2]*event.values[2]));
                 textView.setText(String.format("%.2f",magneticFieldStrength));
+                if(magneticFieldStrength > 250){
+                    Intent intent = new Intent();
+                    intent.putExtra("data",4);
+                    setResult(RESULT_OK,intent);
+                    finish();
+                }
             }
 
             @Override

@@ -20,19 +20,20 @@
         android:contentDescription="@string/levelDescription2"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editTxtRiddleAnswer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:minHeight="48dp"
-        android:text="Name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLevel2"
-        app:layout_constraintVertical_bias="0.527" />
+        app:layout_constraintVertical_bias="0.527"
+        android:importantForAutofill="no"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/textLevel"
@@ -43,19 +44,20 @@
         android:paddingRight="10dp"
         android:text="@string/SecondLevelText"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/editTxtRiddleAnswer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imgLevel2" />
 
     <Button
-        android:id="@+id/btnLevel1Action"
+        android:id="@+id/btnGameCompleted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:text="@string/btnTextLevel2"
+        android:onClick="checkRiddleAnswer"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editTxtRiddleAnswer" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

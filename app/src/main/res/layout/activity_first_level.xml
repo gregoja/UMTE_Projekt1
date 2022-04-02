@@ -7,7 +7,7 @@
     tools:context=".FirstLevelActivity">
 
     <ImageView
-        android:id="@+id/imgLevel1"
+        android:id="@+id/imgGameCompleted"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:src="@drawable/level1"
@@ -20,7 +20,7 @@
         android:contentDescription="@string/levelDescription1"/>
 
     <TextView
-        android:id="@+id/textLevel1"
+        android:id="@+id/textGameCompleted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -29,20 +29,20 @@
         android:paddingRight="10dp"
         android:text="@string/FirstLevelText"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/btnLevel1Action"
+        app:layout_constraintBottom_toTopOf="@+id/btnGameCompleted"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLevel1" />
+        app:layout_constraintTop_toBottomOf="@+id/imgGameCompleted" />
 
     <Button
-        android:id="@+id/btnLevel1Action"
+        android:id="@+id/btnGameCompleted"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnFirstLevel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgLevel1"
+        app:layout_constraintTop_toBottomOf="@+id/imgGameCompleted"
         android:onClick="checkLocation"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

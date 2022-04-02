@@ -25,7 +25,12 @@ public class ThirdLevelActivity extends AppCompatActivity {
                         Bundle bundle = result.getData().getExtras();
                         String s = (String) bundle.get("data");
                         if("http://en.m.wikipedia.org".equals(s)) {
-                            Toast.makeText(ThirdLevelActivity.this,"Hurá", Toast.LENGTH_SHORT).show();
+                            Intent intent = new Intent();
+                            intent.putExtra("data",3);
+                            setResult(RESULT_OK,intent);
+                            finish();
+                        }else{
+                            Toast.makeText(this, "Toto je špatný QR, Zkus to znovu", Toast.LENGTH_SHORT).show();
                         }
                     }
                 });
