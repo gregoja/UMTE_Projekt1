@@ -7,6 +7,7 @@ import androidx.core.content.ContextCompat;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.os.Bundle;
@@ -73,7 +74,10 @@ public class FirstLevelActivity extends AppCompatActivity {
                 float dist = areaOfInterest.distanceTo(currentPosition);
                 // 100km
                 if(dist < 100000){
-                    Toast.makeText(getApplicationContext(),"Výborně!"+dist,Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent();
+                    intent.putExtra("data",1);
+                    setResult(RESULT_OK,intent);
+                    finish();
                 }else{
                     Toast.makeText(getApplicationContext(),"Nene, Nejsi dostatečně blízko" + dist,Toast.LENGTH_SHORT).show();
                 }

@@ -7,7 +7,7 @@
     tools:context=".FourthLevelActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgLevel4"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:src="@drawable/level4"
@@ -16,10 +16,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.050000012"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/levelDescription4"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textLevel4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -28,19 +29,18 @@
         android:paddingRight="10dp"
         android:text="@string/FourthLevelText"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintBottom_toTopOf="@+id/textLevel4Sensor"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLevel4" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textLevel4Sensor"
         android:layout_width="48dp"
         android:layout_height="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLevel4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

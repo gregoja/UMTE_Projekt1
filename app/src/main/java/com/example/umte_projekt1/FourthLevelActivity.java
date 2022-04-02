@@ -21,7 +21,7 @@ public class FourthLevelActivity extends AppCompatActivity{
         SensorManager sensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         Sensor sensor = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD);
 
-        TextView textView = findViewById(R.id.textView2);
+        TextView textView = findViewById(R.id.textLevel4Sensor);
 
         SensorEventListener sensorEventListener = new SensorEventListener() {
             @SuppressLint("DefaultLocale")

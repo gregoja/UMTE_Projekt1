@@ -10,4 +10,12 @@
     <string name="ThirdLevelActivityTitle">Třetí úroveň</string>
     <string name="FourthLevelActivityTitle">Čtvrtá úroveň</string>
     <string name="FourthLevelText">Po zjištění tajného obsahu kódu QR jsi zjistil, že největší drakova slabina je Magnet. Vyhledej tedy magnet a zažeň pomocí něj draka!</string>
+    <string name="levelLinkDescription1">First Level link</string>
+    <string name="levelLinkDescription2">Second Level link</string>
+    <string name="levelLinkDescription3">Third Level link</string>
+    <string name="levelLinkDescription4">Fourth Level link</string>
+    <string name="levelDescription1">First Level image (castle)</string>
+    <string name="levelDescription2">Second Level image (king)</string>
+    <string name="levelDescription3">Third Level image (wizard)</string>
+    <string name="levelDescription4">Fourth Level image (dragon)</string>
 </resources>

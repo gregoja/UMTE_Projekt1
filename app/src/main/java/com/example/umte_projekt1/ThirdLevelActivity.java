@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class ThirdLevelActivity extends AppCompatActivity {
 
-    ActivityResultLauncher<Intent> activityResultLauncher;
+    private ActivityResultLauncher<Intent> activityResultLauncher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

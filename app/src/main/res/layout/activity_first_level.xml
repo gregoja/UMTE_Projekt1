@@ -7,7 +7,7 @@
     tools:context=".FirstLevelActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgLevel1"
         android:layout_width="300dp"
         android:layout_height="300dp"
         android:src="@drawable/level1"
@@ -16,10 +16,11 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.050000012"
-        tools:srcCompat="@tools:sample/avatars" />
+        tools:srcCompat="@tools:sample/avatars"
+        android:contentDescription="@string/levelDescription1"/>
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textLevel1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -28,20 +29,20 @@
         android:paddingRight="10dp"
         android:text="@string/FirstLevelText"
         android:textSize="17sp"
-        app:layout_constraintBottom_toTopOf="@+id/button3"
+        app:layout_constraintBottom_toTopOf="@+id/btnLevel1Action"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgLevel1" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnLevel1Action"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnFirstLevel"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imgLevel1"
         android:onClick="checkLocation"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
