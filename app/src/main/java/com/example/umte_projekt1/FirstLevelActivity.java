@@ -75,8 +75,8 @@ public class FirstLevelActivity extends AppCompatActivity {
                 // 100km
                 if(dist < 100000){
                     Intent intent = new Intent();
-                    intent.putExtra("data",1);
-                    setResult(RESULT_OK,intent);
+                    intent.putExtra("data", 1);
+                    setResult(RESULT_OK, intent);
                     finish();
                 }else{
                     Toast.makeText(getApplicationContext(),"Nene, Nejsi dostatečně blízko" + dist,Toast.LENGTH_SHORT).show();

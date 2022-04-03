@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.util.Locale;
@@ -22,12 +21,12 @@ public class SecondLevelActivity extends AppCompatActivity {
     public void checkRiddleAnswer(View view) {
         EditText editTxtRiddleAnswer = findViewById(R.id.editTxtRiddleAnswer);
         String riddleAnswer = editTxtRiddleAnswer.getText().toString();
-        if("drak".equals(riddleAnswer.toLowerCase(Locale.ROOT))){
+        if ("drak".equals(riddleAnswer.toLowerCase(Locale.ROOT))) {
             Intent intent = new Intent();
-            intent.putExtra("data",2);
-            setResult(RESULT_OK,intent);
+            intent.putExtra("data", 2);
+            setResult(RESULT_OK, intent);
             finish();
-        }else{
+        } else {
             Toast.makeText(this, "Špatná odpověď", Toast.LENGTH_SHORT).show();
         }
     }

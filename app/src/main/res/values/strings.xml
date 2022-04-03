@@ -22,4 +22,6 @@
     <string name="btnGameCompleted">Resetovat hru</string>
     <string name="textGameCompleted">Po porážce draka jsi se už moc těšil na svou zaslouženou odměnu. Chystal ses ale králi navrhnout, že namísto původní odměny by jsi raději jenom polovinu království ale celou princeznu. Nakonec se ukázalo, že takhle to naštěstí král vždy myslel. Pouze se přeřekl. KONEC.</string>
     <string name="txtHeadlineGameCompleted">GRATULACE!!</string>
+    <string name="GameCompletedActivityTitle">Výhra!</string>
+    <string name="btnGameCompletedText">SCAN</string>
 </resources>

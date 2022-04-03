@@ -12,7 +12,7 @@ import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.widget.TextView;
 
-public class FourthLevelActivity extends AppCompatActivity{
+public class FourthLevelActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,12 +28,12 @@ public class FourthLevelActivity extends AppCompatActivity{
             @SuppressLint("DefaultLocale")
             @Override
             public void onSensorChanged(SensorEvent event) {
-                double magneticFieldStrength = Math.sqrt((event.values[0]*event.values[0])+(event.values[1]*event.values[1])+(event.values[2]*event.values[2]));
-                textView.setText(String.format("%.2f",magneticFieldStrength));
-                if(magneticFieldStrength > 250){
+                double magneticFieldStrength = Math.sqrt((event.values[0] * event.values[0]) + (event.values[1] * event.values[1]) + (event.values[2] * event.values[2]));
+                textView.setText(String.format("%.2f", magneticFieldStrength));
+                if (magneticFieldStrength > 250) {
                     Intent intent = new Intent();
-                    intent.putExtra("data",4);
-                    setResult(RESULT_OK,intent);
+                    intent.putExtra("data", 4);
+                    setResult(RESULT_OK, intent);
                     finish();
                 }
             }
@@ -44,6 +44,6 @@ public class FourthLevelActivity extends AppCompatActivity{
             }
         };
 
-        sensorManager.registerListener(sensorEventListener, sensor,SensorManager.SENSOR_DELAY_UI);
+        sensorManager.registerListener(sensorEventListener, sensor, SensorManager.SENSOR_DELAY_UI);
     }
 }

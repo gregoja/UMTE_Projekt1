@@ -18,7 +18,9 @@
         android:theme="@style/Theme.UMTE_Projekt1">
         <activity
             android:name=".GameCompletedActivity"
-            android:exported="false"/>
+            android:exported="false"
+            android:label="@string/GameCompletedActivityTitle"
+            />
         <activity
             android:name=".QrReaderActivity"
             android:exported="false"
